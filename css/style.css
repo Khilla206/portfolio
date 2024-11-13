@@ -1,0 +1,222 @@
+html, body {
+  box-sizing: border-box;
+  background-color: #212121;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: #cff1fb;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url(../assets/images/matrix-1274888_1920-50f.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  z-index: -100;
+}
+
+.navbar-toggler {
+  color: #bbffaa !important;
+  border-color: #bbffaa !important;
+}
+
+.navbar-toggler-icon {
+  color: #bbffaa !important;
+  border-color: #bbffaa !important;
+  stroke: #bbffaa !important;
+  stroke-width: 2px !important;
+  background-image: url('data:image/svg+xml;charset=UTF8,%3csvg xmlns%3d%27http%3a//www.w3.org/2000/svg%27 viewBox%3d%270 0 16 16%27 fill%3d%27none%27 stroke%3d%27%23bbffaa%27 stroke-linecap%3d%27round%27 stroke-miterlimit%3d%2710%27 stroke-width%3d%272%27%3e%3cpath d%3d%27M1 2.5h14M1 8h14M1 13.5h14%27/%3e%3c/svg%3e') !important;
+  width: 1em !important;
+  height: 1em !important;
+}
+
+span {
+  color: red;
+}
+
+.nav-link:hover {
+  color: #bbffaa;
+}
+
+.nav-link.active.rounded-fill {
+  background-color: #bbffaa; 
+  color: #000; 
+  border-radius: 10px; 
+  padding: 10px 15px;
+  font-weight: 400;
+}
+.nav-link.active.rounded-fill:hover {
+  color: #fff;
+}
+
+.lightlime {
+  color: #bbffaa;
+}
+
+.paleblue {
+  color: #cff1fb;
+}
+
+.grey {
+  background-color: #f8f9fa;
+}
+
+.form-control {
+  background-color: #212121;
+  border-color: #cff1fb;
+  color: #cff1fb;
+  opacity: 0.5;
+}
+
+.form-control::placeholder {
+  color: #cff1fb; 
+  opacity: 0.5; 
+}
+
+.form-control:focus {
+  background-color: #212121; 
+  color: #cff1fb;
+  outline: none; 
+}
+
+.myname {
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rounded {
+  border-radius: 30px !important;
+}
+
+.btn-outline-secondary, .btn-tag {
+  --bs-btn-color: #cff1fb;
+  --bs-btn-border-color: #cff1fb;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #bbffaa;
+  --bs-btn-hover-border-color: #bbffaa;
+  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #212121;
+  --bs-btn-active-border-color: #fff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6c757d;
+}
+
+#footer-content, #contact {
+  height: 600px;
+  background-image: url(../assets/images/pexels-artunchained-325229-3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link, .project-link {
+  text-decoration: none !important; 
+  color: #cff1fb !important;
+}
+
+.social-link:hover, .project-link:hover {
+  text-decoration: none !important;
+  color: #bbffaa !important;
+}
+
+mark {
+  background: #bbffaa !important;
+  color: #000 !important;
+}
+
+.myhint {
+  font-size: 1.15rem;
+}
+
+.border-info {
+  border: none !important;
+  border-top: 2px dashed #cff1fb !important;
+}
+
+figcaption {
+  padding: 3px;
+  font-size: smaller;
+  font-weight: 600;
+  color: #000 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.image-overlay-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.image-overlay-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+  border: 4px solid transparent;
+  z-index: 1;
+}
+
+.image-overlay-wrapper:hover::before {
+  opacity: 0.75;
+  border-color: #bbffaa;
+}
+
+a.no-underline {
+  display: block;
+  position: relative;
+}
+
+a.no-underline figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+a.no-underline:hover figcaption {
+  opacity: 0.8;
+  pointer-events: none;
+  background-color: #bbffaa; 
+  color: #000; 
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.image-overlay-wrapper img {
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+.project-link {
+  padding-top: 0.5rem;
+} 
+
+.img-thumbnail {
+  border-color: transparent !important;
+  background-color: transparent !important;
+}
+
+.img-thumbnail:hover {
+  border-color: transparent !important;
+  background-color: #bbffaa !important;
+}
