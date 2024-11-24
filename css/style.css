@@ -220,3 +220,13 @@ a.no-underline:hover figcaption {
   border-color: transparent !important;
   background-color: #bbffaa !important;
 }
+
+@media (max-width: 768px) {
+  .projects {
+      justify-content: center !important;  /* Horizontaal centreren */
+      align-items: center !important;     /* Verticaal centreren */
+  }
+  aside h3 {
+      margin: 0 0 0 1.5rem;
+  }
+}
