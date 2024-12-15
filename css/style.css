@@ -190,6 +190,12 @@ a {
   text-decoration: none;
 }
 
+.portfolio-item p.h6 {
+  min-height: 2rem; /* or the height required to fit two lines */
+  max-height: 2rem; /* keeps the grid consistent */
+  overflow: hidden;
+}
+
 .image-overlay-wrapper {
   position: relative;
   display: inline-block;
