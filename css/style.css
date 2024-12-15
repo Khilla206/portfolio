@@ -191,8 +191,8 @@ a {
 }
 
 .portfolio-item p.h6 {
-  min-height: 2rem; /* or the height required to fit two lines */
-  max-height: 2rem; /* keeps the grid consistent */
+  min-height: 2rem;
+  max-height: 2rem;
   overflow: hidden;
 }
 
