@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Bram De Bruyn</title>
+  <title>Portfolio Bram De Bruyn | Systeem-en netwerkbeheerder</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,15 +18,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- JavaScript: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
-    </script>
-    <!-- eigen geschreven css voor jouw html-bestand -->
-   <link rel="stylesheet" href="css/style.css">
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+  </script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/script.js" defer></script>
+  <script src="js/country-is.js" defer></script>
    
 
 </head>
 
-<body class="p-3 m-0 border-0">
+<body class="m-0 border-0">
+  <div id="user-country" class="text-center mb-3">
+    Detecting your location...
+  </div>
   <div class="container">
     <nav class="navbar navbar-expand-md">
       <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-fluid" alt="Bram De Bruyn logo"
@@ -41,8 +47,18 @@
           <li class="nav-item me-4 ms-4">
             <a class="nav-link paleblue fs-5 active rounded-fill" href="#">home</a>
           </li>
-          <li class="nav-item me-4 ms-4">
-            <a class="nav-link paleblue fs-5" aria-current="page" href="portfolio.html">portfolio</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle paleblue fs-5 rounded-fill" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">portfolio</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-capitalize" href="portfolio.html">portfolio</a></li>
+              <li><a class="dropdown-item text-capitalize" href="webwizz.html"><i class="bi bi-arrow-right-short"></i>webwizz</a></li>
+              <li><a class="dropdown-item text-capitalize" href="ecobin.html"><i class="bi bi-arrow-right-short"></i>ecobin</a></li>
+              <li><a class="dropdown-item text-capitalize" href="smart-office.html"><i class="bi bi-arrow-right-short"></i>smartOffice</a></li>
+              <li><a class="dropdown-item text-capitalize" href="cybervault.html"><i class="bi bi-arrow-right-short"></i>cybervault</a></li>
+              <li><a class="dropdown-item text-capitalize" href="pyserveguard.html"><i class="bi bi-arrow-right-short"></i>pyServeGuard</a></li>
+              <li><a class="dropdown-item text-capitalize" href="intelliflow.html"><i class="bi bi-arrow-right-short"></i>intelliflow</a></li>
+            </ul>
           </li>
           <li class="nav-item me-4 ms-4">
             <a class="nav-link paleblue fs-5" href="contact.html">contact</a>
@@ -57,6 +73,7 @@
       <img src="assets/images/Bram-De-Bruyn450.png" class="img-fluid mx-auto d-block" height="auto" alt="Bram De Bruyn">
 
       <h1 class="display-1 lightlime text-center pt-5 myname">Bram De Bruyn</h1>
+      <small class="text-body-secondary text-center d-block">Systeem- en netwerkbeheerder met een achtergrond in print &amp; webdesign</small>
     </header>
 
     <div class="container">
@@ -64,8 +81,8 @@
         <main class="col-12">
           <section id="aboutme" class="row">
             <article class="intro-item">
-              <p class="lead p-5 b-5">Een flexibele en gestructureerde professional met diepgaande kennis van systemen,
-                datacom en netwerken.
+              <p class="lead p-5 b-5">Een flexibele en gestructureerde professional met diepgaande kennis van <strong class="vetter">systemen,
+                datacom en netwerken</strong>.
                 In de loop van mijn carrière heb ik waardevolle ervaring opgedaan en blijf ik mijn expertise ontwikkelen
                 door zelfstudie en gerichte opleidingen.
                 Met een passie voor technologie en ICT streef ik voortdurend naar het verbeteren van mijn vaardigheden.
@@ -77,48 +94,45 @@
           <hr class="border border-info mx-auto">
 
           <section id="portfolio" class="row">
-            <h2 class="display-5 text-center p-5">Projecten</h2>
+            <h1 class="display-5 text-center p-5 text-capitalize">projecten</h1>
             <div class="row">
               <article class="col-12 col-sm-6 col-md-4 pb-5 portfolio-item">
-                <h3 class="ms-4 lightlime">Project 01</h3>
-                <p class="h6 small ms-4 me-4 mb-4">Lorem ipsum dolor sit amet consectetur!</p>
-                <a href="project.html" rel="noopener" class="no-underline">
+                <h3 class="ms-4 lightlime text-capitalize">webwizz</h3>
+                <p class="h6 small ms-4 me-4 mb-4">Netwerk gestructureerd bekabelen</p>
+                <a href="webwizz.html" rel="noopener" class="no-underline">
                   <figure class="image-overlay-wrapper rounded">
-                    <img src="assets/images/pexels-canvastudio-3194519var.jpg" class="img-fluid rounded"
-                      alt="thumbnail voor project 01" title="actieve deelname aan project1 briefing">
+                    <img src="assets/images/gestructureerde-bekabeling-multicolor.jpg" class="img-fluid rounded"
+                      alt="voorbeeld gestuctureerde bekabeling kleurcodes" title="een voorbeeld van gestuctureerde bekabeling met behulp van kleurcodes">
                   </figure>
-                  <figcaption class="h2-small text-center">Briefingsmeeting Project1</figcaption>
+                  <figcaption class="h2-small text-center">Gestructureerde bekabeling</figcaption>
                 </a>
               </article>
               <article class="col-12 col-sm-6 col-md-4 pb-5 portfolio-item">
-                <h3 class="ms-4 lightlime">Project 02</h3>
-                <p class="h6 small ms-4 me-4 mb-4">Lorem ipsum dolor sit amet consectetur!</p>
-                <a href="project.html" rel="noopener" class="no-underline">
+                <h3 class="ms-4 lightlime text-capitalize">ecobin</h3>
+                <p class="h6 small ms-4 me-4 mb-4">Slim afvalbeheer</p>
+                <a href="ecobin.html" rel="noopener" class="no-underline">
                   <figure class="image-overlay-wrapper rounded">
-                    <img src="assets/images/pexels-joshsorenson-1054397var.jpg" class="img-fluid rounded"
-                      alt="thumbnail voor project 02" title="Titel voor project 02">
+                    <img src="assets/images/ecobin-slim-afvalbeheer-met-iot-sensoren.jpg" class="img-fluid rounded"
+                      alt="ecobin vuilnisbak" title="een slimme Ecobin vuilnisbak die is uitgerust met IoT sensoren">
                   </figure>
-                  <figcaption class="h2-small text-center">Datacenter bezoek</figcaption>
+                  <figcaption class="h2-small text-center">IoT-oplossingen afvalbeheer</figcaption>
                 </a>
               </article>
               <article class="col-12 col-sm-6 col-md-4 pb-5 portfolio-item">
-                <h3 class="ms-4 lightlime">Project 03</h3>
-                <p class="h6 small ms-4 me-4 mb-4">Lorem ipsum dolor sit amet consectetur!</p>
-                <a href="project.html" rel="noopener" class="no-underline">
+                <h3 class="ms-4 lightlime text-capitalize">smartOffice</h3>
+                <p class="h6 small ms-4 me-4 mb-4">Duurzaam gebouwbeheer</p>
+                <a href="smart-office.html" rel="noopener" class="no-underline">
                   <figure class="image-overlay-wrapper rounded">
-                    <img src="assets/images/pexels-mizunokozuki-12899191var.jpg" class="img-fluid rounded"
-                      alt="thumbnail voor project 03" title="Titel voor project 03">
+                    <img src="assets/images/smartoffice_duurzaam_gebouwbeheer_met_iot.jpg" class="img-fluid rounded"
+                      alt="slim bedrijfspand" title="een slim bedrijfspand dat via IoT-oplossingen zoals SmartOffice wordt beheerd">
                   </figure>
-                  <figcaption class="h2-small text-center">Start programmeren</figcaption>
+                  <figcaption class="h2-small text-center">IoT-oplossingen gebouwbeheer</figcaption>
                 </a>
               </article>
             </div>
 
             <div class="text-center">
-              <button type="button" class="btn btn-outline-secondary btn-lg mx-auto mb-5"
-                onclick="window.location.href='portfolio.html'">
-                Bekijk portfolio
-              </button>
+              <a href="portfolio.html" class="btn btn-outline-secondary btn-lg mx-auto mb-5">Bekijk portfolio</a>
             </div>
 
           </section>
@@ -127,21 +141,25 @@
 
           <section id="contact" class="row">
             <article class="text-center container-fluid pb-5 my-auto">
-              <h3 class="display-5 text-center p-5">Contact</h3>
+              <h3 class="display-5 text-center p-5 text-capitalize">contact</h3>
               <a class="h2 paleblue myname text-center social-link"
                 href="mailto:bramdebruyn@gmail.com">bramdebruyn@gmail.com</a>
               <div class="row mt-5">
                 <div class="col-3 column d-flex align-items-center justify-content-center">
-                  <a href="#" class="social-link paleblue"><i class="bi bi-linkedin fs-1"></i></a>
+                  <a href="https://www.linkedin.com/in/bramdebruyn/" class="social-link paleblue" aria-label="LinkedIn profile" target="_blank" 
+                  rel="noopener noreferrer"><i class="bi bi-linkedin fs-1" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-3 column d-flex align-items-center justify-content-center">
-                  <a href="#" class="social-link paleblue"><i class="bi bi-github fs-1"></i></a>
+                  <a href="https://github.com/Khilla206" class="social-link paleblue" aria-label="GitHub profile" target="_blank" 
+                  rel="noopener noreferrer"><i class="bi bi-github fs-1" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-3 column d-flex align-items-center justify-content-center">
-                  <a href="#" class="social-link paleblue"><i class="bi bi-slack fs-1"></i></a>
+                  <a href="https://app.slack.com/client/T085JTVCSFK/C0853CCS5HT" class="social-link paleblue" aria-label="Slack profile" target="_blank" 
+                  rel="noopener noreferrer"><i class="bi bi-slack fs-1" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-3 column d-flex align-items-center justify-content-center">
-                  <a href="#" class="social-link paleblue"><i class="bi bi-whatsapp fs-1"></i></a>
+                  <a href="https://wa.me/+32476245947" class="social-link paleblue" aria-label="Whatsapp profile" target="_blank" 
+                  rel="noopener noreferrer"><i class="bi bi-whatsapp fs-1" aria-hidden="true"></i></a>
                 </div>
               </div>
             </article>
@@ -158,7 +176,7 @@
   <footer class="container p-3">
     <div class="row">
       <div class="col-lg-4 column d-flex align-items-center justify-content-center">
-        <p class="small">&copy; 2024 Bram De Bruyn</p>
+        <p class="small">&copy; <span id="year"></span> Bram De Bruyn</p>
       </div>
       <div class="col-lg-4 column d-flex align-items-center justify-content-center">
         <p class="myhint"><strong><mark>Beschikbaar</mark></strong> voor een voltijdse rol!</p>

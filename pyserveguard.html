@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyServeGuard - De krachtige Python toolkit voor datacentra | Bram De Bruyn</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer>
+        </script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+    <script src="js/country-is.js" defer></script>
+
+</head>
+
+<body class="m-0 border-0">
+    <div id="user-country" class="text-center mb-3">
+        Detecting your location...
+    </div>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-md">
+
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-fluid"
+                    alt="Bram De Bruyn logo" width="210" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-4 ms-4">
+                        <a class="nav-link paleblue fs-5" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle paleblue fs-5 active rounded-fill" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">portfolio</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-capitalize" href="portfolio.html">portfolio</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="webwizz.html"><i class="bi bi-arrow-right-short"></i>webwizz</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="ecobin.html"><i class="bi bi-arrow-right-short"></i>ecobin</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="smart-office.html"><i class="bi bi-arrow-right-short"></i>smartOffice</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="cybervault.html"><i class="bi bi-arrow-right-short"></i>cybervault</a></li>
+                          <li><a class="dropdown-item text-capitalize" aria-current="page" href="pyserveguard.html"><i class="bi bi-arrow-right-short"></i>pyServeGuard</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="intelliflow.html"><i class="bi bi-arrow-right-short"></i>intelliflow</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item me-4 ms-4">
+                        <a class="nav-link paleblue fs-5" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="container-fluid p-5 text-center">
+            <h1 class="display-1 lightlime pt-5 myname text-capitalize">pyServeGuard</h1>
+            <h2 class="display-6">Een krachtige Python toolkit voor datacentra</h2>
+        </header>
+
+        <hr class="border border-info mx-auto">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-9 col-12">
+                <section id="portfolio" class="row">
+                    <div class="col-12">
+                        <article class="col-md-9 pb-5 pt-5">
+
+                            <figure class="rounded">
+                                <img src="assets/images/pyserveguard-python-toolkit-voor-datacentra.jpg" class="img-fluid rounded"
+                                        alt="computerscherm met code" title="programma code die wordt geschreven in een code editor zoals Visual Studio Code waar ook deze website is in ontwikkeld">
+                            </figure>
+                            <figcaption class="h6-small text-light m-4 d-flex justify-content-between align-items-start"><span class="paleblue">Sfeerbeeld van een code editor venster</span>
+                                <small class="paleblue">© 2024 Pexels</small>
+                            </figcaption>
+                            
+                            <h3 class="m-4 pt-4 pb-2 lightlime">pyServeGuard: Python toolkit voor serverbeheer in datacentra</h3>
+                            <p class="h6 small ms-4 me-4 mb-4 lh-lg"><strong class="vetter">PyServeGuard</strong> is een Python-gebaseerd project dat gericht is op het vereenvoudigen en automatiseren van serverbeheer in datacenters. Dit project biedt een krachtige toolkit om taken zoals servermonitoring, resourcebeheer, en foutopsporing efficiënt uit te voeren. Met een combinatie van scripting, automatisering en analyse helpt PyServeGuard IT-beheerders bij het optimaliseren van processen en minimaliseren van menselijke fouten. Het is ontworpen om schaalbaar te zijn en aanpasbaar aan de unieke behoeften van elk datacenter.</p>
+                        
+                            <!-- accordion -->
+                            <div class="accordion m-4 pt-4" id="projectAccordion">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            De opdracht
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projectAccordion">
+                                        <div class="accordion-body p-5">
+                                            <p class="small lh-lg">Datacenters hebben vaak te maken met complexe serverinfrastructuren die handmatig beheer inefficiënt en foutgevoelig maken. De oorspronkelijke opdracht was het ontwikkelen van een scriptplatform dat taken zoals het controleren van serverstatus, foutmeldingen, en rapportage volledig automatiseert.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            Waarom PyServeGuard
+                                        </button>
+                                    </h3>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projectAccordion">
+                                        <div class="accordion-body p-5">
+                                            <p class="small lh-lg">Het handmatig beheren van honderden tot duizenden servers is tijdrovend en brengt risico's met zich mee, zoals inconsistente configuraties en vertraagde foutoplossingen. Het gebruik van een geautomatiseerd systeem zoals PyServeGuard verbetert de efficiëntie, verlaagt operationele kosten, en verhoogt de betrouwbaarheid van het netwerk.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            Onze oplossing
+                                        </button>
+                                    </h3>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projectAccordion">
+                                        <div class="accordion-body p-5">
+                                            <p class="small lh-lg">Met PyServeGuard hebben we een flexibele Python-toolkit ontwikkeld die:
+                                                <ul class="list-group">
+                                                    <li class="list-group-item small">Real-time monitoring van servers uitvoert, inclusief CPU-, geheugen- en netwerkgebruik.</li>
+                                                    <li class="list-group-item small">Automatische foutdetectie en notificaties biedt via e-mail of Slack.</li>
+                                                    <li class="list-group-item small">Op maat gemaakte scripts ondersteunt om specifieke taken te automatiseren, zoals back-ups of updates.</li>
+                                                    <li class="list-group-item small">Data visualiseert in een gebruiksvriendelijke webinterface.</li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="m-4 pt-4 pb-2 lightlime text-capitalize">skillset</h3>
+                            <div class="gap-2 d-flex flex-wrap justify-content-center rounded-lg m-4 paleblue">
+                                <a href="#" class="btn btn-tag btn-sm text-capitalize">programmeren</a>
+                                <a href="#" class="btn btn-tag btn-sm text-capitalize">scripting</a>
+                                <a href="#" class="btn btn-tag btn-sm text-capitalize">python</a>
+                                <a href="#" class="btn btn-tag btn-sm text-capitalize">databanken beheer</a>
+                                <a href="#" class="btn btn-tag btn-sm text-capitalize">webontwikkeling</a>
+                                <a href="#" class="btn btn-tag btn-sm text-uppercase">api's</a>
+                            </div>
+                            
+                            <!-- Table -->
+                            <h3 class="m-4 pt-4 pb-2 lightlime">Vergelijk prijzen</h2>
+                                <div class="table-responsive m-4">
+                                    <table class="table table-dark table-hover text-center">
+                                      <thead>
+                                        <tr>
+                                          <th style="width: 34%;"></th>
+                                          <th style="width: 22%;" class="small fw-bolder lightlime text-capitalize">basic</th>
+                                          <th style="width: 22%;" class="small fw-bolder lightlime text-capitalize">pro</th>
+                                          <th style="width: 22%;" class="small fw-bolder lightlime text-capitalize">enterprise</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row" class="text-start small fw-bolder">Real-time monitoring</th>
+                                          <td><i class="bi bi-check-lg"></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row" class="text-start small fw-bolder">Automatische foutmeldingen</th>
+                                          <td></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row" class="text-start small fw-bolder">Op maat gemaakte scripts</th>
+                                          <td></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row" class="text-start small fw-bolder">Geavanceerde analyses en rapportages</th>
+                                          <td></td>
+                                          <td></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row" class="text-start small fw-bolder">Webinterface voor monitoring</th>
+                                          <td><i class="bi bi-check-lg"></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row" class="text-start small fw-bolder">Multi-server ondersteuning</th>
+                                          <td></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row" class="text-start small fw-bolder">24/7 technische ondersteuning</th>
+                                          <td></td>
+                                          <td></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row" class="text-start small fw-bolder">Toegang tot API's</th>
+                                          <td></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                          <td><i class="bi bi-check-lg"></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr>
+                                            <th scope="row" colspan="4" class="text-center small fw-bolder text-uppercase">pyserveguard - python toolkit formules</th>
+                                        </tr>
+                                    </tr>
+                                    </tfoot>
+                                    </table>
+                                  </div>
+                                  
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="col-md-3 col-12 mt-3 mt-md-0 pt-5">
+                <h3 class="lightlime projects text-capitalize">projecten</h3>
+                <ul class="list-inline projects mt-5 d-flex flex-column flex-md-column flex-sm-row flex-wrap justify-content-start align-items-start align-items-md-start">
+                    <li class="pb-4 pe-4 d-flex flex-column align-items-center text-center">
+                        <a href="webwizz.html">
+                            <img src="assets/images/gestructureerde-bekabeling-multicolor-thumb.jpg"
+                                class="img-thumbnail rounded" alt="voorbeeld gestuctureerde bekabeling kleurcodes" title="een voorbeeld van gestuctureerde bekabeling met behulp van kleurcodes">
+                            <br>
+                            <span class="project-link text-center text-capitalize">webwizz</span>
+                        </a>
+                    </li>
+                    <li class="pb-4 pe-4 d-flex flex-column align-items-center text-center">
+                        <a href="ecobin.html">
+                            <img src="assets/images/ecobin-slim-afvalbeheer-met-iot-sensoren-thumb.jpg"
+                                class="img-thumbnail rounded" alt="ecobin vuilnisbak" title="een slimme Ecobin vuilnisbak die is uitgerust met IoT sensoren">
+                            <br>
+                            <span class="project-link text-center text-capitalize">ecobin</span>
+                        </a>
+                    </li>
+                    <li class="pb-4 pe-4 d-flex flex-column align-items-center text-center">
+                        <a href="smart-office.html">
+                            <img src="assets/images/smartoffice_duurzaam_gebouwbeheer_met_iot-thumb.jpg"
+                                class="img-thumbnail rounded" alt="slim bedrijfspand" title="een slim bedrijfspand dat via IoT-oplossingen zoals SmartOffice wordt beheerd">
+                            <br>
+                            <span class="project-link text-center text-capitalize">smartOffice</span>
+                        </a>
+                    </li>
+                    <li class="pb-4 pe-4 d-flex flex-column align-items-center text-center">
+                        <a href="cybervault.html">
+                            <img src="assets/images/cybervault-de-verloren-sleutel-cybersecurity-challenge-thumb.jpg" 
+                                class="img-thumbnail rounded" alt="computer hacker" title="sfeerbeeld van een computerhacker">
+                            <br>
+                            <span class="project-link text-center text-capitalize">cybervault</span>
+                        </a>
+                    </li>
+                    <li class="pb-4 pe-4 d-flex flex-column align-items-center text-center">
+                        <a href="intelliflow.html">
+                            <img src="assets/images/intelliflow-krachtige-workflow-automatisatie-thumb.jpg" 
+                                class="img-thumbnail rounded" alt="server racks" title="Binnenkijk in een datacenter met rijen server racks">
+                            <br>
+                            <span class="project-link text-center text-capitalize">intelliFlow</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <hr class="border border-info mx-auto">
+            <section id="footer-content" class="row">
+                <article class="text-center container-fluid pb-5 my-auto">
+                    <h3 class="display-5 text-center p-5 text-capitalize">contact</h3>
+                    <a class="h2 paleblue myname text-center social-link"
+                    href="mailto:bramdebruyn@gmail.com">bramdebruyn@gmail.com</a>
+                    <div class="row mt-5">
+                        <div class="col-3 column d-flex align-items-center justify-content-center">
+                            <a href="https://www.linkedin.com/in/bramdebruyn/" class="social-link paleblue" aria-label="LinkedIn profile" target="_blank" 
+                            rel="noopener noreferrer"><i class="bi bi-linkedin fs-1" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-3 column d-flex align-items-center justify-content-center">
+                            <a href="https://github.com/Khilla206" class="social-link paleblue" aria-label="GitHub profile" target="_blank" 
+                            rel="noopener noreferrer"><i class="bi bi-github fs-1" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-3 column d-flex align-items-center justify-content-center">
+                            <a href="https://app.slack.com/client/T085JTVCSFK/C0853CCS5HT" class="social-link paleblue" aria-label="Slack profile" target="_blank" 
+                            rel="noopener noreferrer"><i class="bi bi-slack fs-1" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-3 column d-flex align-items-center justify-content-center">
+                            <a href="https://wa.me/+32476245947" class="social-link paleblue" aria-label="Whatsapp profile" target="_blank" 
+                            rel="noopener noreferrer"><i class="bi bi-whatsapp fs-1" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <hr class="border border-info mx-auto">
+        </div>
+    </div>
+    </div>
+
+    <footer class="container p-3">
+        <div class="row">
+            <div class="col-lg-4 column d-flex align-items-center justify-content-center">
+                <p class="small">&copy; <span id="year"></span> Bram De Bruyn</p>
+            </div>
+            <div class="col-lg-4 column d-flex align-items-center justify-content-center">
+                <p class="myhint"><strong><mark>Beschikbaar</mark></strong> voor een voltijdse rol!</p>
+            </div>
+            <div class="col-lg-4 column d-flex align-items-center justify-content-center">
+                <p class="small">Gemaakt door BDB met Bootstrap5</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

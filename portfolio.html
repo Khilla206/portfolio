@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Bram De Bruyn</title>
+  <title>Portfolio - Mijn projecten en realisaties | Bram De Bruyn</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,17 +23,24 @@
   <!-- eigen geschreven css voor jouw html-bestand -->
    <link rel="stylesheet" href="css/style.css">
 
+   <script src="js/script.js" defer></script>
+   <script src="js/country-is.js" defer></script>
+
 </head>
 
-<body class="p-3 m-0">
+<body class="m-0 border-0">
+    <div id="user-country" class="text-center mb-3">
+        Detecting your location...
+    </div>
     <div class="container">
         <nav class="navbar navbar-expand-md">
-        
+
             <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-fluid"
                     alt="Bram De Bruyn logo" width="210" height="auto">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,10 +48,20 @@
                     <li class="nav-item me-4 ms-4">
                         <a class="nav-link paleblue fs-5" href="index.html">home</a>
                     </li>
-                    <li class="nav-item me-4 ms-4">
-                        <a class="nav-link paleblue fs-5 active rounded-fill" aria-current="page" href="#">portfolio</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle paleblue fs-5 active rounded-fill" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">portfolio</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-capitalize" aria-current="page" href="portfolio.html">portfolio</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="webwizz.html"><i class="bi bi-arrow-right-short"></i>webwizz</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="ecobin.html"><i class="bi bi-arrow-right-short"></i>ecobin</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="smart-office.html"><i class="bi bi-arrow-right-short"></i>smartOffice</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="cybervault.html"><i class="bi bi-arrow-right-short"></i>cybervault</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="pyserveguard.html"><i class="bi bi-arrow-right-short"></i>pyServeGuard</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="intelliflow.html"><i class="bi bi-arrow-right-short"></i>intelliflow</a></li>
+                        </ul>
                     </li>
-        
+
                     <li class="nav-item me-4 ms-4">
                         <a class="nav-link paleblue fs-5" href="contact.html">contact</a>
                     </li>
@@ -54,8 +71,8 @@
 
 
         <header class="container-fluid p-5 text-center">
-            <h1 class="display-1 lightlime pt-5 myname">Portfolio</h1>
-            <h2 class="">Mijn projecten en realisaties</h2>
+            <h1 class="display-1 lightlime pt-5 myname text-capitalize">portfolio</h1>
+            <h2 class="display-6">Mijn projecten en realisaties</h2>
         </header>
 
         <div class="container">
@@ -63,75 +80,75 @@
                 <main class="col-12">
                     <hr class="border border-info mx-auto">
                     <section id="portfolio" class="row">
-                        <h2 class="display-5 text-center p-5">Projecten</h2>
+                        <h2 class="display-5 text-center p-5 text-capitalize">projecten</h2>
                         <div class="row">
                             <article class="col-12 col-sm-6 col-md-4 pb-5 portfolio-item">
-                                <h3 class="ms-4 lightlime">Project 01</h3>
-                                <p class="h6 small ms-4 me-4 mb-4">Lorem ipsum dolor sit amet consectetur!</p>
-                                <a href="project.html" rel="noopener" class="no-underline">
+                                <h3 class="ms-4 lightlime text-capitalize">webwizz</h3>
+                                <p class="h6 small ms-4 me-4 mb-4">Netwerk gestructureerd bekabelen</p>
+                                <a href="webwizz.html" rel="noopener" class="no-underline">
                                     <figure class="image-overlay-wrapper rounded">
-                                        <img src="assets/images/pexels-canvastudio-3194519var.jpg"
-                                            class="img-fluid rounded" alt="afbeelding voor project 01"
-                                            title="actieve deelname aan project1 briefing">
+                                        <img src="assets/images/gestructureerde-bekabeling-multicolor.jpg"
+                                            class="img-fluid rounded" alt="voorbeeld gestuctureerde bekabeling kleurcodes"
+                                            title="een voorbeeld van gestuctureerde bekabeling met behulp van kleurcodes">
                                     </figure>
-                                    <figcaption class="h6-small text-center">Briefingsmeeting Project1</figcaption>
+                                    <figcaption class="h6-small text-center">Gestructureerde bekabeling</figcaption>
                                 </a>
                             </article>
                             <article class="col-12 col-sm-6 col-md-4 pb-5 portfolio-item">
-                                <h3 class="ms-4 lightlime">Project 02</h3>
-                                <p class="h6 small ms-4 me-4 mb-4">Lorem ipsum dolor sit amet consectetur!</p>
-                                <a href="project.html" rel="noopener" class="no-underline">
+                                <h3 class="ms-4 lightlime text-capitalize">ecobin</h3>
+                                <p class="h6 small ms-4 me-4 mb-4">Slim afvalbeheer</p>
+                                <a href="ecobin.html" rel="noopener" class="no-underline">
                                     <figure class="image-overlay-wrapper rounded">
-                                        <img src="assets/images/pexels-joshsorenson-1054397var.jpg"
-                                            class="img-fluid rounded" alt="afbeelding voor project 02"
-                                            title="titel voor project 02">
+                                        <img src="assets/images/ecobin-slim-afvalbeheer-met-iot-sensoren.jpg"
+                                            class="img-fluid rounded" alt="ecobin vuilnisbak"
+                                            title="een slimme Ecobin vuilnisbak die is uitgerust met IoT sensoren">
                                     </figure>
-                                    <figcaption class="h2-small text-center">Datacenter bezoek</figcaption>
+                                    <figcaption class="h2-small text-center">IoT-oplossingen afvalbeheer</figcaption>
                                 </a>
                             </article>
                             <article class="col-12 col-sm-6 col-md-4 pb-5 portfolio-item">
-                                <h3 class="ms-4 lightlime">Project 03</h3>
-                                <p class="h6 small ms-4 me-4 mb-4">Lorem ipsum dolor sit amet consectetur!</p>
-                                <a href="project.html" rel="noopener" class="no-underline">
+                                <h3 class="ms-4 lightlime text-capitalize">smartOffice</h3>
+                                <p class="h6 small ms-4 me-4 mb-4">Duurzaam gebouwbeheer</p>
+                                <a href="smart-office.html" rel="noopener" class="no-underline">
                                     <figure class="image-overlay-wrapper rounded">
-                                        <img src="assets/images/pexels-mizunokozuki-12899191var.jpg"
-                                            class="img-fluid rounded" alt="afbeelding voor project 03"
-                                            title="titel voor project 03">
+                                        <img src="assets/images/smartoffice_duurzaam_gebouwbeheer_met_iot.jpg"
+                                            class="img-fluid rounded" alt="slim bedrijfspand"
+                                            title="een slim bedrijfspand dat via IoT-oplossingen zoals SmartOffice wordt beheerd">
                                     </figure>
-                                    <figcaption class="h2-small text-center">Start programmeren</figcaption>
+                                    <figcaption class="h2-small text-center">IoT-oplossingen gebouwbeheer</figcaption>
                                 </a>
                             </article>
                             <article class="col-12 col-sm-6 col-md-4 pb-5 portfolio-item">
-                                <h3 class="ms-4 lightlime">Project 04</h3>
-                                <p class="h6 small ms-4 me-4 mb-4">Lorem ipsum dolor sit amet consectetur!</p>
-                                <a href="project.html" rel="noopener" class="no-underline">
+                                <h3 class="ms-4 lightlime text-capitalize">cybervault</h3>
+                                <p class="h6 small ms-4 me-4 mb-4">De Verloren Sleutel</p>
+                                <a href="cybervault.html" rel="noopener" class="no-underline">
                                     <figure class="image-overlay-wrapper rounded">
-                                        <img src="assets/images/pexels-colored_fansvar..jpg" class="img-fluid rounded"
-                                            alt="afbeelding voor project 04" title="titel voor project 04">
+                                        <img src="assets/images/cybervault-de-verloren-sleutel-cybersecurity-challenge.jpg" class="img-fluid rounded"
+                                            alt="computerhacker" title="sfeerbeeld van een computerhacker">
                                     </figure>
-                                    <figcaption class="h2-small text-center">Briefingsmeeting Project1</figcaption>
+                                    <figcaption class="h2-small text-center">Cybersecurity <br>challenge</figcaption>
                                 </a>
                             </article>
                             <article class="col-12 col-sm-6 col-md-4 pb-5 portfolio-item">
-                                <h3 class="ms-4 lightlime">Project 05</h3>
-                                <p class="h6 small ms-4 me-4 mb-4">Lorem ipsum dolor sit amet consectetur!</p>
-                                <a href="project.html" rel="noopener" class="no-underline">
+                                <h3 class="ms-4 lightlime text-capitalize">pyServeGuard</h3>
+                                <p class="h6 small ms-4 me-4 mb-4">Een krachtige Python toolkit voor datacentra</p>
+                                <a href="pyserveguard.html" rel="noopener" class="no-underline">
                                     <figure class="image-overlay-wrapper rounded">
-                                        <img src="assets/images/pexels-hackervar.jpg" class="img-fluid rounded"
-                                            alt="afbeelding voor project 05" title="titel voor project 05">
+                                        <img src="assets/images/pyserveguard-python-toolkit-voor-datacentra.jpg" class="img-fluid rounded"
+                                            alt="computerscherm met code" title="programma code die wordt geschreven in een code editor zoals Visual Studio Code waar ook deze website is in ontwikkeld">
                                     </figure>
-                                    <figcaption class="h2-small text-center">Datacenter bezoek</figcaption>
+                                    <figcaption class="h2-small text-center">Krachtige <br>Python toolkit</figcaption>
                                 </a>
                             </article>
                             <article class="col-12 col-sm-6 col-md-4 pb-5 portfolio-item">
-                                <h3 class="ms-4 lightlime">Project 06</h3>
-                                <p class="h6 small ms-4 me-4 mb-4">Lorem ipsum dolor sit amet consectetur!</p>
-                                <a href="project.html" rel="noopener" class="no-underline">
+                                <h3 class="ms-4 lightlime text-capitalize">intelliFlow</h3>
+                                <p class="h6 small ms-4 me-4 mb-4">Workflows met krachtige automatisering</p>
+                                <a href="intelliflow.html" rel="noopener" class="no-underline">
                                     <figure class="image-overlay-wrapper rounded">
-                                        <img src="assets/images/pexels-datacentervar.jpg" class="img-fluid rounded"
-                                            alt="afbeelding voor project 06" title="titel voor project 06">
+                                        <img src="assets/images/intelliflow-krachtige-workflow-automatisatie.jpg" class="img-fluid rounded"
+                                            alt="server racks" title="Binnenkijk in een datacenter met rijen server racks">
                                     </figure>
-                                    <figcaption class="h2-small text-center">Start programmeren</figcaption>
+                                    <figcaption class="h2-small text-center">Automatisering &amp; <br>machine learning</figcaption>
                                 </a>
                             </article>
                         </div>
@@ -139,25 +156,29 @@
                     <hr class="border border-info mx-auto">
                     <section id="contact" class="row">
                         <article class="text-center container-fluid pb-5 my-auto">
-                            <h3 class="display-5 text-center p-5">Contact</h3>
-                            <a class="h2 paleblue myname text-center social-link"
-                                href="mailto:bramdebruyn@gmail.com">bramdebruyn@gmail.com</a>
-                            <div class="row mt-5">
-                                <div class="col-3 column d-flex align-items-center justify-content-center">
-                                    <a href="#" class="social-link paleblue"><i class="bi bi-linkedin fs-1"></i></a>
-                                </div>
-                                <div class="col-3 column d-flex align-items-center justify-content-center">
-                                    <a href="#" class="social-link paleblue"><i class="bi bi-github fs-1"></i></a>
-                                </div>
-                                <div class="col-3 column d-flex align-items-center justify-content-center">
-                                    <a href="#" class="social-link paleblue"><i class="bi bi-slack fs-1"></i></a>
-                                </div>
-                                <div class="col-3 column d-flex align-items-center justify-content-center">
-                                    <a href="#" class="social-link paleblue"><i class="bi bi-whatsapp fs-1"></i></a>
-                                </div>
+                          <h3 class="display-5 text-center p-5 text-capitalize">contact</h3>
+                          <a class="h2 paleblue myname text-center social-link"
+                            href="mailto:bramdebruyn@gmail.com">bramdebruyn@gmail.com</a>
+                          <div class="row mt-5">
+                            <div class="col-3 column d-flex align-items-center justify-content-center">
+                              <a href="https://www.linkedin.com/in/bramdebruyn/" class="social-link paleblue" aria-label="LinkedIn profile" target="_blank" 
+                              rel="noopener noreferrer"><i class="bi bi-linkedin fs-1" aria-hidden="true"></i></a>
                             </div>
+                            <div class="col-3 column d-flex align-items-center justify-content-center">
+                              <a href="https://github.com/Khilla206" class="social-link paleblue" aria-label="GitHub profile" target="_blank" 
+                              rel="noopener noreferrer"><i class="bi bi-github fs-1" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-3 column d-flex align-items-center justify-content-center">
+                              <a href="https://app.slack.com/client/T085JTVCSFK/C0853CCS5HT" class="social-link paleblue" aria-label="Slack profile" target="_blank" 
+                              rel="noopener noreferrer"><i class="bi bi-slack fs-1" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-3 column d-flex align-items-center justify-content-center">
+                              <a href="https://wa.me/+32476245947" class="social-link paleblue" aria-label="Whatsapp profile" target="_blank" 
+                              rel="noopener noreferrer"><i class="bi bi-whatsapp fs-1" aria-hidden="true"></i></a>
+                            </div>
+                          </div>
                         </article>
-                    </section>
+                      </section>
                     <hr class="border border-info mx-auto">
                 </main>
             </div>
@@ -167,7 +188,7 @@
     <footer class="container p-3">
         <div class="row">
             <div class="col-lg-4 column d-flex align-items-center justify-content-center">
-                <p class="small">&copy; 2024 Bram De Bruyn</p>
+                <p class="small">&copy; <span id="year"></span> Bram De Bruyn</p>
             </div>
             <div class="col-lg-4 column d-flex align-items-center justify-content-center">
                 <p class="myhint"><strong><mark>Beschikbaar</mark></strong> voor een voltijdse rol!</p>
