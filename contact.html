@@ -99,37 +99,40 @@
           </section>
           
           <section id="contactform" class="row">
-            <h1 class="display-5 text-center p-5 text-capitalize">contactformulier</h2>
-            <form name="contact" method="POST" data-netlify="true">
+            <h1 class="display-5 text-center p-5 text-capitalize">contactformulier</h1>
+            <form name="contact" method="POST" data-netlify="true" action="/thank-you">
+              <!-- Hidden input for Netlify form processing -->
+              <input type="hidden" name="form-name" value="contact">  
+              
               <fieldset class="row g-3 mb-3">
                 <div class="col-md-6 mb-4">
                   <label for="firstName" class="form-label text-capitalize">voornaam <span>*</span></label>
-                  <input type="text" class="form-control form-control-lg rounded-lg" id="firstName"
+                  <input type="text" class="form-control form-control-lg rounded-lg" id="firstName" name="firstName"
                     placeholder="Voornaam" required>
                 </div>
                 <div class="col-md-6 mb-4">
                   <label for="lastName" class="form-label text-capitalize">achternaam <span>*</span></label>
-                  <input type="text" class="form-control form-control-lg rounded-lg" id="lastName"
+                  <input type="text" class="form-control form-control-lg rounded-lg" id="lastName" name="lastName"
                     placeholder="Achternaam" required>
                 </div>
                 <div class="col-md-6 mb-4">
                   <label for="mail" class="form-label">E-mail <span>*</span></label>
-                  <input type="email" class="form-control form-control-lg rounded-lg" id="mail" placeholder="E-mail"
+                  <input type="email" class="form-control form-control-lg rounded-lg" id="mail" name="email" placeholder="E-mail"
                     required>
                 </div>
                 <div class="col-md-6 mb-4">
                   <label for="mobile" class="form-label text-capitalize">mobiel</label>
-                  <input type="tel" class="form-control form-control-lg rounded-lg" id="mobile"
+                  <input type="tel" class="form-control form-control-lg rounded-lg" id="mobile" name="mobile"
                     pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="0412 34 56 78">
                 </div>
                 <div class="col-12 mb-4">
-                  <label for="mobile" class="form-label text-capitalize">onderwerp</label>
-                  <input type="tel" class="form-control form-control-lg rounded-lg" id="subject" placeholder="Onderwerp"
+                  <label for="subject" class="form-label text-capitalize">onderwerp</label>
+                  <input type="text" class="form-control form-control-lg rounded-lg" id="subject" name="subject" placeholder="Onderwerp"
                     required>
                 </div>
                 <div class="col-12 mb-4">
                   <label for="message" class="form-label text-capitalize">bericht</label>
-                  <textarea class="form-control form-control-lg rounded-lg" id="message" rows="4" placeholder="Bericht"
+                  <textarea class="form-control form-control-lg rounded-lg" id="message" namme="message" rows="4" placeholder="Bericht"
                     required></textarea>
                 </div>
                 <div class="mb-4">
