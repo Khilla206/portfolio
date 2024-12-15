@@ -100,9 +100,9 @@
           
           <section id="contactform" class="row">
             <h1 class="display-5 text-center p-5 text-capitalize">contactformulier</h1>
-            <!-- <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"> -->
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
               <!-- Hidden input for Netlify form processing -->
-              <!-- <input type="hidden" name="form-name" value="contact">  
+              <input type="hidden" name="form-name" value="contact">  
               
               <fieldset class="row g-3 mb-3">
                 <div class="col-md-6 mb-4">
@@ -135,11 +135,14 @@
                   <textarea class="form-control form-control-lg rounded-lg" id="message" name="message" rows="4" placeholder="Bericht"
                     required></textarea>
                 </div>
+                <div class="form-group">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
                 <div class="mb-4">
                   <button type="submit" class="btn btn-outline-secondary btn-lg text-capitalize">verzend</button>
                 </div>
-              </fieldset> -->
-              <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+              </fieldset>
+              <!-- <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                 <div class="form-group">
                   <label for="name">Name:</label>
                   <input type="text" class="form-control" id="name" name="name" required>
@@ -160,7 +163,7 @@
                   <div data-netlify-recaptcha="true"></div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+              </form> -->
 
           </section>
 
