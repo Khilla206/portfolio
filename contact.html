@@ -100,7 +100,7 @@
           
           <section id="contactform" class="row">
             <h1 class="display-5 text-center p-5 text-capitalize">contactformulier</h1>
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
               <!-- Hidden input for Netlify form processing -->
               <input type="hidden" name="form-name" value="contact">  
               
@@ -132,7 +132,7 @@
                 </div>
                 <div class="col-12 mb-4">
                   <label for="message" class="form-label text-capitalize">bericht</label>
-                  <textarea class="form-control form-control-lg rounded-lg" id="message" namme="message" rows="4" placeholder="Bericht"
+                  <textarea class="form-control form-control-lg rounded-lg" id="message" name="message" rows="4" placeholder="Bericht"
                     required></textarea>
                 </div>
                 <div class="mb-4">
