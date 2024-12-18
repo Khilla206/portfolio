@@ -422,6 +422,10 @@ a.no-underline:hover figcaption {
   --bs-list-group-bg: #212121;
 }
 
+.leaflet-marker-pane .leaflet-marker-icon:first-of-type {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .projects {
       justify-content: center !important;  /* Horizontaal centreren */

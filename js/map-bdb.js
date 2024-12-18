@@ -27,3 +27,13 @@ var circle = L.circle([51.317, 4.433], {
 L.marker([51.317, 4.433]).addTo(map)
     .bindPopup('mijn locatie:<br> <b>Kapellen<br>2950</b>')
     .openPopup();
+
+var BramIcon = L.icon({
+    iconUrl: 'assets/images/Bram-De-Bruynleafletmarker.png',
+
+    iconSize:     [50, 50], // size of the icon
+    iconAnchor:   [26, 37], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+L.marker([51.317, 4.433], {icon: BramIcon}).addTo(map);
